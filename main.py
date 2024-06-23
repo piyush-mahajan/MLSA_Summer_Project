@@ -1,18 +1,18 @@
 import os
-import urllib.error  # Import urllib.error
+import ssl
+import urllib.error
 from pytube import YouTube
 from youtube_transcript_api import YouTubeTranscriptApi
 from langchain_core.pydantic_v1 import BaseModel, Field
 from langchain_openai import ChatOpenAI
 
+from dotenv import load_dotenv, find_dotenv
+
 import subprocess
 import json
-import socket  # Import socket
-
+import socket
 from typing import List
 
-# load the environment variables
-from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
 youtube_url = "https://www.youtube.com/watch?v=4WO5kJChg3w"
@@ -36,5 +36,7 @@ except urllib.error.URLError as e:
     print(f"Failed to open URL: {e.reason}")
 except socket.gaierror as e:
     print(f"Address-related error: {e}")
+except ssl.SSLError as e:
+    print(f"SSL error: {e}")
 except Exception as e:
     print(f"An error occurred: {e}")
