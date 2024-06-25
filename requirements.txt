@@ -4,4 +4,3 @@ pytube
 langchain_openai
 python-dotenv
 youtube_transcript_api
-urllib
