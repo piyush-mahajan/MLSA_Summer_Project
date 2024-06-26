@@ -40,3 +40,8 @@ except ssl.SSLError as e:
     print(f"SSL error: {e}")
 except Exception as e:
     print(f"An error occurred: {e}")
+
+#get the transcript
+video_id = yt.video_id
+transcript = YouTubeTranscriptApi.get_transcript(video_id)
+print(transcript)
