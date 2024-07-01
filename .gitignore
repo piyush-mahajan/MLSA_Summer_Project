@@ -3,3 +3,5 @@ venv/
 
 # Put env variables in a .env file
 .env
+env/
+env
