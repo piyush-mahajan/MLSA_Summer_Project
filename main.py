@@ -47,3 +47,6 @@ print("API Response:")
 print(response.text)  # Print the response to check its content
 
 
+# what to implent next is 
+# now have the exact response form the model for each clip 
+# then put all of the time stamps in the list so we can have trhe Collection of it as well 
