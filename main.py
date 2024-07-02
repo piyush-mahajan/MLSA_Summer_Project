@@ -39,11 +39,17 @@ subtopics from the video based on the transcript.
 Make sure each segment is between 30-500 seconds in duration.
 Make sure you provide extremely accurate timestamps
 and respond only in the format provided. 
+format is as follows, Give in json format:
+start_time: float , 
+    end_time: float ,
+    yt_title: str = ,
+    description: str , 
+    duration : int ,
 \n Here is the transcription : \n {transcript}"""
 
 # Generate text with the Gemini model
 response = model.generate_content(prompt)
-print("API Response:")
+print("API Response:------------------------------")
 print(response.text)  # Print the response to check its content
 
 

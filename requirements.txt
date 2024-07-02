@@ -1,7 +1,15 @@
-langchain
-langchain_community
+# langchain
+# langchain_community
+# pytube
+# langchain_openai
+# python-dotenv
+# youtube_transcript_api
+# google-generativeai
 pytube
-langchain_openai
-python-dotenv
 youtube_transcript_api
-google-generativeai
+langchain
+langchain-huggingface
+pydantic
+python-dotenv
+huggingface_hub
+ffmpeg-python
